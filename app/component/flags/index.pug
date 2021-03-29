@@ -1,0 +1,4 @@
+mixin flags(data)
+    .flags(class= data.class)
+        each item in data.items
+            .flags__item= item

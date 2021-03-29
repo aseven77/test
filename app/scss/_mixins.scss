@@ -1,0 +1,23 @@
+@mixin large {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media (max-width: 1025px) {
+        @content;
+    }
+}
+
+@mixin medium {
+    @media (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin small {
+    @media (max-width: 767px) {
+        @content;
+    }
+}

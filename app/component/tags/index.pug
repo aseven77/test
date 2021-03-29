@@ -1,0 +1,4 @@
+mixin tags(data)
+    .tags(class= data.classes)
+        each item in data.items
+            .tags__item= item

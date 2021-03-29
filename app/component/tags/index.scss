@@ -1,0 +1,23 @@
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        border: 2px solid #ffd600;
+        line-height: 1;
+        padding: 3px 5px;
+        border-radius: 5px;
+        color: #ffd600;
+
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+
+    &--articles  {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        transition: 0.3s;
+    }
+}

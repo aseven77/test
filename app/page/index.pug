@@ -1,0 +1,58 @@
+extends layout/main.pug
+
+include ../blocks/head/head.pug
+
+block title
+    +head('Тестовое задание')
+block pagecontent
+    .articles(style="background-image: url('images/bg.jpg')")
+        +flags({
+            items: ['Популярное'],
+            class: "flags--articles"
+        })
+
+        +tags({
+            items: ['Microgaming'],
+            classes: "tags--articles"
+        })    
+        .articles__main
+            a(href="#").add-favorite
+                +svg("icon-star" , "icon--star icon__brand")
+            .articles__title Name of the game long long game
+            .btn-list
+                a(href="#").btn Play
+                a(href="#").btn.btn--secondary Demo
+    br
+    .articles(style="background-image: url('images/bg.jpg')")
+        +flags({
+            items: ['Популярное'],
+            class: "flags--articles"
+        })
+
+        +tags({
+            items: ['Tag 1' , 'Tag 2'],
+            classes: "tags--articles"
+        })    
+        .articles__main
+            a(href="#").add-favorite
+                +svg("icon-star" , "icon--star icon__brand")
+            .articles__title Name of the game long long game
+            .btn-list
+                a(href="#").btn Play    
+    br
+    .articles(style="background-image: url('images/bg.jpg')")
+        +flags({
+            items: ['Популярное' , 'Популярное2'],
+            class: "flags--articles"
+        })
+
+        +tags({
+            items: ['Tag 1' , 'Tag 2'  , 'Tag 2'],
+            classes: "tags--articles"
+        })    
+        .articles__main
+            a(href="#").add-favorite
+                +svg("icon-star" , "icon--star icon__brand")
+            .articles__title Name of the game long long game
+            .btn-list                        
+        
