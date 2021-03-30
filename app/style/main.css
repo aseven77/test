@@ -164,31 +164,33 @@
     display: flex;
 }
 
-.btn {
+.button {
     font-weight: 700;
     line-height: 1;
     padding: 5px 20px;
+    cursor: pointer;
     transition: .3s;
     text-decoration: none;
     color: #000;
     border: 2px solid transparent;
     border-radius: 5px;
+    outline: 0;
     background-color: #ffd600;
 }
 
-.btn--secondary {
+.button--secondary {
     color: #ffd600;
     border: 2px solid #ffd600;
     background-color: transparent;
 }
 
-.btn:hover {
+.button:hover {
     color: #000;
     border-color: #ffd600;
     background-color: #ffeb80;
 }
 
-.btn:not(:last-child) {
+.button:not(:last-child) {
     margin-right: 20px;
 }
 

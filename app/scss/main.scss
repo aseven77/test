@@ -94,17 +94,18 @@
     display: flex;
 }
 
-.btn {
+.button {
     background-color: #ffd600;
     color: #000;
     border: 2px solid transparent;
     line-height: 1;
     padding: 5px 20px;
     border-radius: 5px;
-    
     font-weight: 700;
     text-decoration: none;
     transition: 0.3s;
+    cursor: pointer;
+    outline: 0;
 
     &--secondary {
         border: 2px solid #ffd600;
